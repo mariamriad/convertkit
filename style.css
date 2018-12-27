@@ -20,6 +20,23 @@ body {
   color: #373F45;
 }
 
+.wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+a {
+  color: #48639C;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #9BB8F4;
+}
+
 /* header rectangle */
 .rectangle {
   position: absolute;
@@ -33,7 +50,7 @@ body {
 /* price packages */
 .package-card {
   position: absolute;
-  width: 415px;
+  max-width: 415px;
   height: 551px;
   left: 0;
   right: 0;
@@ -97,4 +114,42 @@ body {
   font-size: 22px;
   color: #212F4F;
   line-height: 2rem;
+}
+
+/* faq styles */
+.faq {
+  position: absolute;
+  /* top: calc(50% - 31px/2 + 500px); */
+  top: 850px;
+  margin-bottom: 130px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* @media only screen and (min-width: 800px) { */
+  /* .faq {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
+/* } */
+
+.faq-item {
+  max-width: 470px;
+  padding: 30px;
+}
+
+.faq-question {
+  font-weight: 500;
+  line-height: 31px;
+  font-size: 18px;
+  color: #212F4F;
+}
+
+.faq-answer {
+  line-height: 27px;
+  font-size: 16px;
 }
