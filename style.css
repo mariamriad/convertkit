@@ -14,6 +14,87 @@ img {
   }
 
 /* general styles */
-* {
+body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  background: #E5E5E5;
+  color: #373F45;
+}
+
+/* header rectangle */
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 418px;
+  left: 0px;
+  top: -11px;
+  background: #48639C;
+}
+
+/* price packages */
+.package-card {
+  position: absolute;
+  width: 415px;
+  height: 551px;
+  left: 0;
+  right: 0;
+  top: 188px;
+  margin: 0 auto;
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 40px rgba(55, 63, 69, 0.1);
+  border-radius: 8px;
+}
+
+.package-card-top {
+  height: 230px;
+  background: rgba(243, 246, 249, 0.5);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.package-card-top p:first-child {
+  margin-top: 0;
+  padding-top: 60px;
+}
+
+.dollar-sign, .per-month {
+  font-weight: 500;
+  font-size: 22px;
+  color: #B0B8BE;
+}
+
+.dollar-sign {
+  padding-top: 65px;
+}
+
+.per-month {
+  padding-top: 79px;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 500;
+  color: #373F45;
+}
+
+.subscriber-num {
+  padding-top: 25px;
+}
+
+.accent-text {
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #697177;
+}
+
+.package-includes-text {
+  padding-top: 25px;
+}
+
+.package-includes-text p:not(:first-child) {
+  font-weight: 500;
+  font-size: 22px;
+  color: #212F4F;
+  line-height: 2rem;
 }

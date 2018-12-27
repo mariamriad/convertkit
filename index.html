@@ -15,17 +15,19 @@
   <main>
     <section class="package">
       <div class="package-card">
-        <div class="package-price">
-          <p>$<span id="price">price</span>/mo</p>
-          <p>Up to <span>subscriber num</span> subscribers</p>
+        <div class="package-card-top">
+          <div class="package-price">
+            <p><span class="dollar-sign">$</span> <span id="price" class="price">price</span> <span class="per-month">/mo</span></p>
+            <p class="subscriber-num accent-text">Up to <span>subscriber num</span> subscribers</p>
+          </div>
+          <!-- slider start -->
+          <div class="slidecontainer">
+            <input type="range" min="1" max="5" value="4" class="slider" id="subRange">
+          </div>
+          <!-- slider end -->
         </div>
-        <!-- slider start -->
-        <div class="slidecontainer">
-          <input type="range" min="1" max="5" value="4" class="slider" id="subRange">
-        </div>
-        <!-- slider end -->
         <div class="package-includes-text">
-          <p>Also Includes</p>
+          <p class="accent-text">Also Includes</p>
           <p>Unlimited email sends</p>
           <p>150+ integrations</p>
           <p>Email and live chat support</p>
