@@ -122,16 +122,22 @@ a:active {
 /* slider styles */
 .slider {
   -webkit-appearance: none;
+  -moz-apperance: none;
   width: 308px;
   height: 7px;
   border-radius: 6px;
   background-color: #E6EBEF;
-  /* border: 6px solid #E6EBEF; */
   outline: none;
   opacity: 1;
   -webkit-transition: .2s;
   transition: opacity .2s;
-  overflow: hidden;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0.75, #9BB8F4),
+      color-stop(0.75, #E6EBEF)
+  );
 }
 
 .slider:hover {
@@ -146,39 +152,16 @@ a:active {
   border-radius: 50%;
   background: #48639C;
   cursor: pointer;
-
-  box-shadow: -308px 0 0 308px #9BB8F4;
-  overflow: visible !important;
-  /* issue? */
 }
 
 .slider::-moz-range-thumb {
-  -webkit-appearance: none;
+  -moz-appearance: none;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   background: #48639C;
   cursor: pointer;
 }
-
-.slider::-webkit-slider-runnable-track {
-  -webkit-appearance: none;
-}
-
-/** FF*/
-/* input[type="range"]::-moz-range-progress {
-  background-color: #43e5f7;
-}
-input[type="range"]::-moz-range-track {
-  background-color: #9a905d;
-} */
-/* IE*/
-/* input[type="range"]::-ms-fill-lower {
-  background-color: #43e5f7;
-}
-input[type="range"]::-ms-fill-upper {
-  background-color: #9a905d;
-} */
 
 /* package features */
 .accent-text {

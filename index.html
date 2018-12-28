@@ -100,6 +100,17 @@
       $("#price").text(p);
       $("#subscribers").text(s);
   });
+
+  $('input[type="range"]').change(function () {
+    var val = ($(this).val() - $(this).attr('min')) / ($(this).attr('max') - $(this).attr('min'));
+
+    $(this).css('background-image',
+                '-webkit-gradient(linear, left top, right top, '
+                + 'color-stop(' + val + ', #9BB8F4), '
+                + 'color-stop(' + val + ', #E6EBEF)'
+                + ')'
+                );
+  });
 </script>
 
 </body>
