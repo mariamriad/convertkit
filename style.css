@@ -63,6 +63,13 @@ a:active {
   border-radius: 8px;
 }
 
+@media only screen and (max-width: 600px) {
+  .package-card {
+    max-width: 340px;
+    top: 80px;
+  }
+}
+
 .package-card-top {
   height: 230px;
   background: rgba(243, 246, 249, 0.5);
@@ -81,6 +88,12 @@ a:active {
   color: #B0B8BE;
 }
 
+@media only screen and (max-width: 600px) {
+  .dollar-sign, .per-month {
+    font-size: 18px;
+  }
+}
+
 .dollar-sign {
   padding-top: 65px;
 }
@@ -95,8 +108,15 @@ a:active {
   color: #373F45;
 }
 
+@media only screen and (max-width: 600px) {
+  .price {
+    font-size: 38px;
+  }
+}
+
 .subscriber-num {
   padding-top: 25px;
+  padding-bottom: 5px;
 }
 
 /* slider styles */
@@ -168,6 +188,12 @@ input[type="range"]::-ms-fill-upper {
   color: #697177;
 }
 
+@media only screen and (max-width: 600px) {
+  .accent-text {
+    font-size: 12px;
+  }
+}
+
 .package-includes-text {
   padding-top: 25px;
 }
@@ -177,6 +203,12 @@ input[type="range"]::-ms-fill-upper {
   font-size: 22px;
   color: #212F4F;
   line-height: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .package-includes-text p:not(:first-child) {
+    font-size: 18px;
+  }
 }
 
 p.disable {
@@ -193,6 +225,13 @@ p.disable {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .faq {
+    top: 700px;
+    margin-bottom: 80px;
+  }
 }
 
 .faq-question-wrapper {
@@ -220,4 +259,13 @@ svg {
   margin-top: 5px;
   line-height: 27px;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .faq-question {
+    font-size: 16px;
+  }
+  .faq-answer {
+    font-size: 14px;
+  }
 }
