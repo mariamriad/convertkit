@@ -117,6 +117,10 @@ a:active {
   line-height: 2rem;
 }
 
+.disable {
+  color: red;
+}
+
 /* faq styles */
 .faq {
   position: absolute;
